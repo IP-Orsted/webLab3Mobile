@@ -1,0 +1,374 @@
+@font-face {
+  font-family: "CustomFont"; 
+  src:
+    url("./Resources/shrift2.woff2") format("woff2");
+}
+
+
+html, body {
+    margin: 0; 
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    font-family: "CustomFont", Arial, Helvetica, sans-serif;
+    /* cursor: url(https://static.wixstatic.com/media/52610a_e79f3bd6de91436b935a65fd3a09195f~mv2.png/v1/fill/w_93,h_93/52610a_e79f3bd6de91436b935a65fd3a09195f~mv2.png) 16 16, auto; */
+    cursor: url("./Resources/cursor32.png") 16 16, default;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+#page {
+    padding: 0;
+    width: 100%;
+    background-color: black;
+    min-height: 100vh;
+    background-image: url("./Resources/background.png");
+    background-position: center center; 
+    background-repeat: no-repeat;        
+    background-size: contain;
+    display: flex;
+    flex-direction: column;             
+                 
+}
+
+.divider {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    flex: 0 0 7vh;
+}
+
+
+
+#mainbox {
+    width: 100%;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    flex: 1 0 0;
+
+}
+
+
+.textindiv {
+    margin-right: 4%;
+    height: auto;
+    width: auto;
+    font-weight: bold;
+    color: #ECCFA3;
+    font-size: large;
+}
+
+.leftsidebox {
+    border-right: 17px solid transparent;
+    border-image: url("./Resources/divider7.png");
+    border-image-slice: 40;
+    border-image-repeat: stretch;
+    min-height: 100%;
+    width: 20%;
+    background-color:blueviolet;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    font-weight: bold;
+    box-sizing: border-box;
+    background-color: transparent;
+    user-select: none;
+}
+
+@keyframes fadeInUp{
+  from{ opacity:0; transform: translateY(6px); }
+  to  { opacity:1; transform: translateY(0); }
+}
+
+.rightsidebox {
+    font-size: 15px;
+    min-height: 100%;
+    width: 20%;
+    background-color:blueviolet;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    padding: 0 3% 4% 3%;
+    box-sizing: border-box;
+    background-color: transparent;
+    background-image: url("./Resources/housing.png");
+    background-position: center center; 
+    background-repeat: no-repeat;        
+    background-size: contain;
+    color: #ECCFA3;
+    line-height: 1.6;
+    /* Тут анимация */
+    opacity: 0;
+    animation: fadeInUp .8s ease .2s both;
+}
+
+
+
+
+
+#centerbox {
+    position: relative;
+    min-height: 100%;
+    width: 60%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: end; 
+    flex-direction: column;
+}
+
+UL {
+    list-style-type: none;
+    padding: 0;
+    
+}
+
+
+li{
+    color: #ECCFA3;
+    user-select: none;
+}
+
+img {
+    width: 135px;
+    height: 140px;
+    filter: grayscale(100%);
+    transition: filter 0.3s;
+    -webkit-user-drag: none;
+}
+
+img:hover {
+    filter: grayscale(0%);
+}
+
+#menuname {
+    margin-bottom: 27px;
+    margin-right: 133px;
+    color: #ECCFA3;
+    font-size: 22px;
+}
+
+#charactimageMaelle {
+    width: 100%;
+    height: 92%;
+    background-image: url("./Resources/maelleimagepetals3.png");
+    background-position: center center; 
+    background-repeat: no-repeat;        
+    background-size: contain;
+    opacity: 0;
+    animation: fadeInUp 1s ease .2s both;
+}
+
+#charactimageGustave {
+    width: 100%;
+    height: 92%;
+    background-image: url("./Resources/gustaveimagepetals5.png");
+    background-position: center center; 
+    background-repeat: no-repeat;        
+    background-size: contain;
+    opacity: 0;
+    animation: fadeInUp 1s ease .2s both;
+}
+
+#charactimageLune {
+    width: 100%;
+    height: 92%;
+    background-image: url("./Resources/luneimagepetals.png");
+    background-position: center center; 
+    background-repeat: no-repeat;        
+    background-size: contain;
+    opacity: 0;
+    animation: fadeInUp 1s ease .2s both;
+}
+
+#charactimageEsquie {
+    width: 100%;
+    height: 92%;
+    background-image: url("./Resources/esquiepetals.png");
+    background-position: center center; 
+    background-repeat: no-repeat;        
+    background-size: contain;
+    opacity: 0;
+    animation: fadeInUp 1s ease .2s both;
+}
+
+#charactimageVerso {
+    width: 100%;
+    height: 92%;
+    background-image: url("./Resources/versopetals.png");
+    background-position: center center; 
+    background-repeat: no-repeat;        
+    background-size: contain;
+    opacity: 0;
+    animation: fadeInUp 1s ease .2s both;
+}
+
+#charactername {
+    width: 100%;
+    height: 8%;
+    color:#ECCFA3;
+    font-size: 27px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("./Resources/Ultrawide\ Symetrical\ Blob.png");
+    background-position: center center; 
+    background-repeat: no-repeat;        
+    background-size: contain;
+    opacity: 0;
+    animation: fadeInUp .8s ease both;
+}
+
+a {
+    -webkit-user-drag: none;
+}
+
+/* ===== Mobile & Tablet tweaks ===== */
+
+/* 1) Вимкнути кастомний курсор і ховер-ефекти на сенсорних */
+@media (hover: none) and (pointer: coarse) {
+  html, body { cursor: auto; }
+  img { filter: grayscale(0%); }     /* На телефонах показуємо кольорові іконки */
+  img:hover { filter: grayscale(0%); }
+}
+
+/* 2) Планшети і телефони (≤ 900px): складаємо в стеки */
+@media (max-width: 900px) {
+  .divider { flex: 0 0 56px; justify-content: center; }
+  .textindiv { margin-right: 0; font-size: 18px; }
+
+  #mainbox {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+  }
+
+  /* Ліва колонка стає горизонтальною стрічкою з прокруткою */
+  .leftsidebox {
+    order: 2;
+    width: 100%;
+    padding: 8px 12px;
+    border-right: none;
+    border-image: none;
+    display: block;
+    box-sizing: border-box;
+  }
+
+  #menuname {
+    margin: 0 0 8px 0;
+    text-align: left;
+    padding-left: 4px;
+    font-size: 18px;
+  }
+
+  #menu {
+    display: flex;
+    gap: 12px;
+    overflow-x: auto;
+    padding: 8px 2px 2px 2px;
+    scroll-snap-type: x proximity;
+  }
+
+  #menu li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 96px;            /* комфортна «плитка» під палець */
+    font-size: 14px;
+    scroll-snap-align: start;
+  }
+
+  img {
+    width: 96px;
+    height: 100px;
+    -webkit-user-drag: none;
+  }
+
+  /* Центр — картинка персонажа і підпис */
+  #centerbox {
+    order: 1;
+    width: 100%;
+    min-height: auto;
+    align-items: center;
+    padding: 8px 8px 0 8px;
+    box-sizing: border-box;
+  }
+
+  /* Зменшуємо висоту зображення, щоб не «тиснуло» текст */
+  #charactimageMaelle,
+  #charactimageGustave,
+  #charactimageLune,
+  #charactimageEsquie,
+  #charactimageVerso {
+    height: 52vh;               /* було ~92% — завелико для мобільних */
+    background-size: contain;
+  }
+
+  #charactername {
+    height: auto;
+    padding: 10px 0 14px 0;
+    font-size: 20px;
+    background-size: contain;
+  }
+
+  /* Права колонка з описом — під картинкою */
+  .rightsidebox {
+    order: 3;
+    width: 100%;
+    padding: 14px 16px 22px 16px;
+    background-size: 88%;
+    font-size: 15px;
+    line-height: 1.55;
+  }
+}
+
+/* 3) Телефони (≤ 480px): ще трошки компактніше */
+@media (max-width: 480px) {
+  .textindiv { font-size: 16px; }
+
+  #menu { gap: 10px; }
+  #menu li { min-width: 84px; font-size: 13px; }
+  img { width: 84px; height: 88px; }
+
+  #charactimageMaelle,
+  #charactimageGustave,
+  #charactimageLune,
+  #charactimageEsquie,
+  #charactimageVerso {
+    height: 46vh;
+  }
+
+  #charactername { font-size: 18px; padding: 8px 0 12px 0; }
+
+  .rightsidebox {
+    padding: 12px 14px 18px 14px;
+    background-image: none;   /* прибираємо декоративний бек на дуже малих екранах для кращої читабельності */
+    background-color: transparent;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+}
+
+/* 4) Надширокий фон підлаштувати під різні співвідношення сторін */
+@media (max-width: 900px) {
+  #page {
+    background-position: center top;
+    background-size: cover;   /* щоб фон не обрізався дивно на вузьких екранах */
+  }
+}
