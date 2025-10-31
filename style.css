@@ -372,3 +372,31 @@ a {
     background-size: cover;   /* щоб фон не обрізався дивно на вузьких екранах */
   }
 }
+
+/* ==== Mobile background fix & full-height layout ==== */
+html, body {
+  height: 100%;
+  background: #000;           /* запасний фон під текстуру */
+}
+
+/* розтягуємо сторінку на реальну висоту мобільного вікна */
+#page {
+  min-height: 100dvh;         /* краще за 100vh на телефонах */
+  background-size: cover;     /* було contain → дає «білий хвіст» */
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+}
+
+/* штовхаємо футер донизу, щоб не висів посередині */
+footer.divider {
+  margin-top: auto;
+}
+
+/* трохи ущільнимо відступи на вузьких екранах */
+@media (max-width: 480px) {
+  header.divider .textindiv,
+  footer.divider .textindiv { padding: 8px 0; }
+}
